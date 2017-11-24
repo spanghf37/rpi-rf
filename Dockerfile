@@ -1,6 +1,6 @@
 FROM arm64v8/node:latest
 
-RUN apk add --no-cach git
+RUN apk add --no-cache git
 
 RUN git clone git://git.drogon.net/wiringPi
 
