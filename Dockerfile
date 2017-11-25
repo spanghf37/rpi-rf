@@ -21,3 +21,5 @@ WORKDIR /home/node/app
 VOLUME [ "/home/node/app" ]
 
 USER root
+
+CMD ["gpio","readall"]
