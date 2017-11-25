@@ -1,5 +1,7 @@
 FROM arm64v8/node:latest
 
+RUN apt-get install git
+
 RUN git clone git://git.drogon.net/wiringPi
 
 WORKDIR wiringPi/wiringPi 
