@@ -10,7 +10,7 @@ RUN apt-get install -y git build-essential
 
 RUN git clone git://git.drogon.net/wiringPi
 
-WORKDIR wiringPi/wiringPi 
+WORKDIR wiringPi
 
 RUN ./build
 
