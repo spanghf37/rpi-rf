@@ -1,6 +1,8 @@
 FROM arm64v8/node:latest
 
-RUN apt-get install git
+COPY tmp/qemu-aarch64-static /usr/bin/qemu-aarch64-static
+
+RUN apt-get install -y git
 
 RUN git clone git://git.drogon.net/wiringPi
 
