@@ -1,0 +1,16 @@
+{
+  "name": "rpi-rf",
+  "version": "0.1.0",
+  "description": "rpi-rf",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spanghf37/rpi-rf"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
