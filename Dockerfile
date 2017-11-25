@@ -2,9 +2,9 @@ FROM arm64v8/node:latest
 
 COPY tmp/qemu-aarch64-static /usr/bin/qemu-aarch64-static
 
-RUN apt-get update
+RUN apt-get update -y
 
-RUN apt-get upgrade
+RUN apt-get upgrade -y
 
 RUN apt-get install -y git build-essential
 
