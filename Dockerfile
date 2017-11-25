@@ -6,7 +6,7 @@ RUN apt-get update -y
 
 RUN apt-get upgrade -y
 
-RUN apt-get install -y git build-essential
+RUN apt-get install -y git build-essential sudo
 
 RUN git clone git://git.drogon.net/wiringPi
 
