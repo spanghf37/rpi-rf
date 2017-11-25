@@ -18,4 +18,4 @@ VOLUME [ "/home/node/app" ]
 
 USER root
 
-CMD ["gpio","readall"]
+CMD ["npm","start"]
