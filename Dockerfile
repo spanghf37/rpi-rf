@@ -8,6 +8,8 @@ RUN git clone git://git.drogon.net/wiringPi
 
 WORKDIR wiringPi/wiringPi 
 
+RUN ls
+
 RUN ./build
 
 RUN npm install rpi-433
