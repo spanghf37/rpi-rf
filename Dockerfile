@@ -15,6 +15,8 @@ RUN cd wiringPi && ./build
 
 RUN npm install rpi-433
 
+RUN cd /etc/wiringpi && curl https://raw.githubusercontent.com/sakaki-/rpi3-overlay/master/dev-embedded/wiringpi/files/cpuinfo-1 -o "cpuinfo"
+
 WORKDIR /home/node/app
 
 VOLUME [ "/home/node/app" ]
