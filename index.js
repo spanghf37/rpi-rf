@@ -12,3 +12,8 @@ var rpi433    = require('rpi-433'),
 rfSniffer.on('data', function (data) {
   console.log('Code received: '+data.code+' pulse length : '+data.pulseLength);
 });
+
+// Send
+rfEmitter.sendCode(1234, function(error, stdout) {   //Send 1234
+  if(!error) console.log(stdout); //Should display 1234
+});
