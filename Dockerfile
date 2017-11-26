@@ -8,11 +8,10 @@ RUN apt-get upgrade -y
 
 RUN git clone git://git.drogon.net/wiringPi
 
+RUN cd wiringPi && curl https://raw.githubusercontent.com/sakaki-/rpi3-overlay/master/dev-embedded/wiringpi/files/2.44-pseudo-cpuinfo.patch
+ -o 2.44-pseudo-cpuinfo.patch && git apply 2.44-pseudo-cpuinfo.patch
+ 
 RUN cd wiringPi && ./build
-
-RUN git clone https://github.com/Tedxz/RasPi-CPUInfo.git
-
-RUN cd RasPi-CPUInfo && gcc -lwiringPi -o cpuinfo pcd8544_rpi.c PCD8544.c
 
 RUN npm install rpi-433
 
@@ -22,4 +21,4 @@ VOLUME [ "/home/node/app" ]
 
 USER root
 
-CMD ["./cpu", "&", "npm","start"]
+CMD ["npm","start"]
