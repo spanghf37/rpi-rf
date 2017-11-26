@@ -1,10 +1,10 @@
 var rpi433    = require('rpi-433'),
     rfSniffer = rpi433.sniffer({
-      pin: 8,                     //Snif on GPIO 2 (or Physical PIN 13)
+      pin: 9,                     //Snif on GPIO 2 (or Physical PIN 13)
       debounceDelay: 500          //Wait 500ms before reading another code
     }),
     rfEmitter = rpi433.emitter({
-      pin: 9,                     //Send through GPIO 0 (or Physical PIN 11)
+      pin: 8,                     //Send through GPIO 0 (or Physical PIN 11)
       pulseLength: 350            //Send the code with a 350 pulse length
     });
 
